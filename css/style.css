@@ -63,13 +63,21 @@ a {
     color: #bfd0fc;
     text-decoration: none;
     border-bottom: 1px dotted #bfd0fc;
+    padding: 0.1rem;
+    background-image: linear-gradient(#bfd0fc, #bfd0fc);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .25s;
+    transition-timing-function: ease-in-out;
 }
 
 a:hover,
 a:focus {
     color: #1b1c21;
-    background-color: #bfd0fc;
+    /* background-color: #bfd0fc; */
     padding: 0.1rem;
+    background-size: 100% 100%;
+    border-bottom: none;
 }
 
 .wordmark {
