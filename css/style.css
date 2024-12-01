@@ -91,3 +91,41 @@ a:focus {
     text-decoration: none;
     border: none;
 }
+
+/* Image appear on cursor when hovering over keywords*/
+#software:hover:after {
+    content: url(../img/nuff_yulio.gif);
+    /* no need for qoutes */
+    display: block;
+    position: absolute;
+}
+
+#branding:hover:after {
+    content: url(../img/nuff_mjm_logo_2020.gif);
+    display: block;
+    position: absolute;
+}
+
+#murals:hover:after {
+    content: url(../img/nuff_SoSC_fail.gif);
+    display: block;
+    position: absolute;
+}
+
+#installations:hover:after {
+    content: url(../img/nuff_shard.gif);
+    display: block;
+    position: absolute;
+}
+
+#clocks:hover:after {
+    content: url(../img/nuff_pulseclock_loop.gif);
+    display: block;
+    position: absolute;
+
+
+}
+
+::selection {
+    background: #3838d4;
+}
