@@ -94,7 +94,7 @@ a:focus {
 
 /* Image appear on cursor when hovering over keywords*/
 #software:hover:after {
-    content: url(../img/nuff_ocp_800.gif);
+    content: url(../img/nuff_ocp_laptop_800.gif);
     /* no need for qoutes */
     display: block;
     position: absolute;
