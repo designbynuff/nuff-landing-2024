@@ -1,5 +1,6 @@
 body {
     font-family: 'Space Grotesk', sans-serif;
+    /* font-weight: 200; */
     background-color: #1b1c21;
     color: #BFD0FC;
 }
@@ -98,34 +99,69 @@ a:focus {
     /* no need for qoutes */
     display: block;
     position: absolute;
+    z-index: 9999;
 }
 
 #branding:hover:after {
     content: url(../img/nuff_mjm_logo_2020.gif);
     display: block;
     position: absolute;
+    z-index: 9999;
 }
 
 #murals:hover:after {
     content: url(../img/nuff_SoSC_fail.gif);
     display: block;
     position: absolute;
+    z-index: 9999;
 }
 
 #installations:hover:after {
     content: url(../img/nuff_shard.gif);
     display: block;
     position: absolute;
+    z-index: 9999;
 }
 
 #clocks:hover:after {
     content: url(../img/nuff_pulseclock_loop.gif);
     display: block;
     position: absolute;
-
-
+    z-index: 9999;
 }
 
 ::selection {
     background: #3838d4;
+}
+
+/* .gif-hover {
+    font-weight: 600;
+} */
+
+.tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    /* show above the text */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 0.4em 0.6em;
+    border-radius: 0.25em;
+    font-size: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    /* z-index: 9999; */
+}
+
+.tooltip:hover::after {
+    opacity: 1;
 }
