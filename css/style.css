@@ -32,18 +32,18 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-    margin: 10rem 0;
+    margin: 6rem 0;
 }
 
-.lead {
-    font-size: 4rem;
+.hero .lead {
+  font-size: clamp(1.75rem, 5vw, 4rem);
 }
 
 .addendum {
-    font-family: 'Cormorant', serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 2rem;
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
 }
 
 .three-col {
@@ -175,4 +175,37 @@ a:focus {
 
 .tooltip:hover::after {
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+    body {
+      margin: 0 1.5rem; /* Added margin for mobile */
+    }
+
+    /* Adjust header padding for mobile */
+    header {
+      padding: 1rem 0;
+    }
+    /* Adjust three-column layout for mobile */
+    .three-col {
+      flex-direction: column;
+      gap: 2rem; /* Add space between stacked items */
+    }
+
+    .three-col > div {
+      flex: 1; /* Allow each column to take equal space */
+      max-width: 100%; /* Ensure full width on mobile */
+    }
+
+    /* Adjust font size for h2 */
+    h2 {
+      font-size: 1rem; /* Reduced from 1.4rem */
+    }
+
+    /* Reduce paragraph text size */
+    p {
+      font-size: 0.8rem; /* Reduced from 1rem */
+    }
+    
 }
