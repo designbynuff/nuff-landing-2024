@@ -99,6 +99,8 @@ a:focus {
     border: none;
 }
 
+/* .emphasis {   } */
+
 /* Image appear on cursor when hovering over keywords*/
 #software:hover:after {
     background-image: url(../img/nuff_ocp_laptop_800.gif);
